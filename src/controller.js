@@ -106,7 +106,7 @@
   };
 
   Controller.getMaxGive = function (isAdmin) {
-    return isAdmin ? 50 : 1;
+    return isAdmin ? 5 : 1;
   };
 
   Controller.getUserTestimonialsRaw = function (uid, done) {
