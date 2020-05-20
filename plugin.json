@@ -1,0 +1,17 @@
+{
+  "id": "nodebb-plugin-testimonials",
+  "name": "fleshas theme",
+  "description": "NodeBB user testimonials plugin",
+  "url": "",
+  "library": "./src/index.js",
+  "hooks": [
+    {
+      "hook": "static:app.load",
+      "method": "hooks.statics.load"
+    },
+    {
+      "hook": "static:user.delete",
+      "method": "hooks.statics.userDelete"
+    }
+  ]
+}

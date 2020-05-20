@@ -1,0 +1,11 @@
+{
+  "name": "nodebb-plugin-testimonials",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "fleshas",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0"
+  }
+}
