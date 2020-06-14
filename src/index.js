@@ -1,5 +1,6 @@
 const async = require('async');
 const sockets = require('./sockets');
+const controller = require('./controller');
 
 (function (Plugin) {
   Plugin.hooks = {
