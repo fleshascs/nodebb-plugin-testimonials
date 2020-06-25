@@ -186,7 +186,7 @@
             callback();
           });
         },
-        async.apply(Controller.getUserTestimonialsRaw, fromUid),
+        async.apply(Controller.getUserTestimonialsRaw, toUid),
         function (testimonials, callback) {
           Controller.howManyTimesGave(testimonials, fromUid, async (e, howManyTimesGave) => {
             if (e) {
