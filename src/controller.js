@@ -202,7 +202,14 @@
             }
           });
         },
-        async.apply(database.createGrant, toUid, reasonText, type, fromUid, token),
+        async.apply(
+          database.createGrant,
+          toUid,
+          reasonText.substring(0, 500),
+          type,
+          fromUid,
+          token
+        ),
         async.apply(Controller.augmentTestimonial),
         function (testimonial, callback) {
           sockets.emitReceivedTestimonial(fromUid, testimonial);
